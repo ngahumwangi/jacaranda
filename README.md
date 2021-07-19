@@ -38,5 +38,6 @@ An implementation for API endpoints that:
 
 ## Testing the Endepoints Locally
 1. This program was developed Using Pycharm
-2. Check for the project dependencies :requirements.txt
-3. Run the app.py
+2. Clone via: https://github.com/ngahumwangi/jacaranda.git
+3. Check for the project dependencies :requirements.txt
+4. Run the app.py
