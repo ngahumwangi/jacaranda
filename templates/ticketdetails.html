@@ -1,0 +1,37 @@
+
+{% extends 'index.html' %}
+{% block body %}
+
+    <h3 class='text-center'> Retrieved batch output from the database </h3>
+<div class="table-responsive">
+     <table class="table table-striped">
+     <thead>
+    <tr>
+
+      <th scope="col">Ticket_ID</th>
+      <th scope="col">Subject</th>
+      <th scope="col">Phone</th>
+      <th scope="col">Intents</th>
+      <th scope="col">Incoming Messages</th>
+      <th scope="col">Outgoing Messages</th>
+
+    </tr>
+  </thead>
+  <tbody>
+         {% for item in result %}
+             <tr>
+             <td> {{ item["ticket_id"] }}</td>
+             <td> {{ item["subject"] }}</td>
+             <td> {{ item["phone"] }}</td>
+             <td> {{ item["intents"] }}</td>
+             <td> {{ item["incoming_messages"]}}</td>
+             <td> {{ item["outgoing_messages"]}}</td>
+
+             </tr>
+         {% endfor %}
+     <tbody>
+     </table>
+</div>
+
+{% endblock %}
+
